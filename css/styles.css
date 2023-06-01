@@ -124,3 +124,50 @@
     color: #00AD5E;
     background-color: #FFF;
 }
+
+/* Responsivo */
+
+@media(max-width: 450px) {
+    #main-container {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    #form-container,
+    #address-container {
+        flex: 1 1 100%;
+    }
+
+    #form-container {
+        order: -1;
+        padding: 20px;
+    }
+
+    #form-container h2 {
+        margin-bottom: 25px;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+
+    #contact-form input,
+    #contact-form label,
+    #contact-form textarea {
+        border-color: #AAA;
+    }
+
+    #address-container {
+        background-position: 0;
+        height: 500px;
+    }
+
+    .fade {
+        opacity: .9;
+    }
+
+    #address-content {
+        top: 25%;
+        left: 25%;
+    }
+}
